@@ -228,7 +228,7 @@ group by o.id '''
         return self.return_list(sql, converter.DbResponseToOrderConverter())
 
     def get_products_by_order(self, order_id) -> list[dto.OrderProductInfo]:
-        sql = f'''SELECT p.name, p2.name, p.description, p.price, o.amount 
+        sql = f'''SELECT p.name, p2.name, p.description, p.price, o.amount, p.image
 from product p 
 join productcategoty p2 on p2.id  = p.category
 join orderitem o on o.productid = p.id 

@@ -74,6 +74,7 @@ class OrderProductInfo:
     description: str
     price: float
     amount: int
+    image: str
 
     def to_dict(self):
         return self.__dict__
