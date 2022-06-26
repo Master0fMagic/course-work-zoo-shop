@@ -8,21 +8,25 @@ HOW TO RUN
 -
 
 To setup python virtual environment (for Windows):
-```cmd
+```cmd|powershell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 ```
 
-To start back-end:
-```bash for windows
+To install all dependencies:
+```cmd|powershell
 pip install -r reqiurements.txt
+```
+
+To start back-end:
+```cmd|powershell
 $env:FLASK_APP="flaskr/main"
 flask run
 ```
 
 
 To start front-end:
-```bash for windows
+```cmd|powershell
 cd ui
 npm i
 npm start
