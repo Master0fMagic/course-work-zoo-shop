@@ -110,7 +110,7 @@ export class Api {
     }
     logout = async (): Promise<Response> => {
         try {
-            const result: AxiosResponse = await instance.get(logout);
+            const result: AxiosResponse = await instance.post(logout);
             return {data: result};
         } catch (err) {
             console.log(err)
